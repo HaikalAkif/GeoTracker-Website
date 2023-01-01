@@ -8,7 +8,7 @@
     display: none;
 }
 *::selection {
-    background: orangered;
+    background: lime;
     color: var(--sec-text-color);
 }
 :root{
@@ -112,7 +112,7 @@ header .ul2 li a {
     color: var(--sec-text-color);
 }
 .search {
-    width: 100%;
+    width: 400px;
     display: flex;
     align-items: center;
     padding-right: 12px;

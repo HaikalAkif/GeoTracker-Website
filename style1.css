@@ -17,7 +17,7 @@
     --main-text-color: #121212;
     --sec-text-color: #efefef;
     --extra-color: #29C31B;
-    --extra2-color: #cdcdcd;
+    --extra2-color: #dedede;
     --extra3-color: #1693DA;
 }
 
@@ -112,7 +112,7 @@ header .ul2 li a {
     color: var(--sec-text-color);
 }
 .search {
-    width: 100%;
+    width: 400px;
     display: flex;
     align-items: center;
     padding-right: 12px;
@@ -316,6 +316,11 @@ header .ul2 li a {
     font-size: 36px;
     color: var(--main-text-color);
 }
+.feed img {
+    padding-top: 30px;
+    height: 700px;
+    width: 300px;
+}
 .feed-right {
     display: flex;
     flex-direction: column;
@@ -484,14 +489,15 @@ header .ul2 li a {
 .place {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
 }
 .photo {
     width: 80px;
+    height: 80px;
     border-radius: 20px;
-    background-color: var(--sec-color);
+    background-color: var(--extra-color);
 }
 .more {
     display: block;
@@ -505,13 +511,6 @@ header .ul2 li a {
 }
 .more h6 span {
     color: var(--extra3-color);
-}
-.place {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
 }
 
 
@@ -580,6 +579,10 @@ header .ul2 li a {
     justify-content: flex-start;
     flex-direction: column;
     color: var(--sec-text-color);
+}
+.promote i {
+    font-size: 48px;
+    color: var(--main-color);
 }
 .cont7-top .promote h3 {
     font-size: 30px;

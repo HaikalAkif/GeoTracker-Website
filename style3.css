@@ -211,7 +211,9 @@ header .ul2 li a {
     justify-content: space-between;
     align-items: center;
 }
-/* make left */
+.cont3-left iframe {
+    border-radius: 40px;
+}
 .cont3-right {
     display: flex;
     flex-direction: column;
