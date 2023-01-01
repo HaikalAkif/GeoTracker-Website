@@ -18,6 +18,7 @@
     --sec-text-color: #efefef;
     --extra-color: #29C31B;
     --extra2-color: #cdcdcd;
+    --extra3-color: #1693DA;
 }
 
 /* Header Design */
@@ -118,8 +119,6 @@ header .ul2 li a {
     margin-top: 30px;
     background: var(--main-color);
     border-radius: 10px;
-    /* box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px; */
-    /* box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px; */
 }
 .search i {
     font-size: 24px;
@@ -130,7 +129,7 @@ header .ul2 li a {
     border: none;
     padding: 15px 20px;
     outline: none;
-    /* font-size: 16px; */
+    font-size: 16px;
     background-color: transparent;
 }
 .searchTerm:focus {
@@ -246,6 +245,7 @@ header .ul2 li a {
     height: 160px;
     margin: 5px;
     background-color: var(--extra-color);
+    
     transition: .3s;
     overflow: hidden;
     cursor: pointer;
@@ -272,10 +272,11 @@ header .ul2 li a {
     border: 3px solid #cdcdcd;
     font-size: 16px;
     border-radius: 10px;
-    transition: ease-in-out .4s;
+    transition: ease-in-out .6s;
 }
 .btn2:hover {
-    background-color: var(--extra2-color);
+    background-color: var(--sec-color);
+    color: var(--sec-text-color);
 }
 .container3 .part2 {
     margin-top: 50px;
@@ -298,15 +299,23 @@ header .ul2 li a {
 }
 .feed .feed-left {
     width: 32%;
-    display: flex;
-    flex-direction: column;
+    display: inline;
     gap: 10px;
     margin-left: 40px;
 }
 .feed-left h2 {
     font-size: 28px;
 }
-
+.feed-left i {
+    font-size: 36px;
+    color: var(--sec-text-color);
+    transition: ease-in .4s;
+    margin: 20px 0;
+}
+.feed-left i:hover {
+    font-size: 36px;
+    color: var(--main-text-color);
+}
 .feed-right {
     display: flex;
     flex-direction: column;
@@ -466,6 +475,45 @@ header .ul2 li a {
     height: 74px;
     object-fit: cover;
 }
+.small-spots {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 20px;
+    row-gap: 20px;
+}
+.place {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.photo {
+    width: 80px;
+    border-radius: 20px;
+    background-color: var(--sec-color);
+}
+.more {
+    display: block;
+}
+.more h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.more h6 {
+    font-size: 16px;
+}
+.more h6 span {
+    color: var(--extra3-color);
+}
+.place {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 
 .container6 {
     padding: 60px 10%;

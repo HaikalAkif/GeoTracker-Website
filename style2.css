@@ -114,15 +114,23 @@ header .ul2 li a {
 .search {
     width: 100%;
     display: flex;
+    align-items: center;
+    padding-right: 12px;
     margin-top: 30px;
+    background: var(--main-color);
+    border-radius: 10px;
+}
+.search i {
+    font-size: 24px;
+    color: var(--extra2-color);
 }
 .searchTerm {
     width: 100%;
     border: none;
     padding: 15px 20px;
-    border-radius: 10px;
     outline: none;
-    color: var(--main-text-color);
+    font-size: 16px;
+    background-color: transparent;
 }
 .searchTerm:focus {
     color: var(--main-text-color);
@@ -209,7 +217,7 @@ footer {
     color: var(--sec-text-color);
     text-decoration: none;
     font-weight: 300;
-    display: block;
+    display: inline;
     transition: all .3s ease;
 }
 .foot-col ul li a:hover {

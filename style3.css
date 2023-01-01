@@ -129,7 +129,7 @@ header .ul2 li a {
     background-color: var(--sec-color);
 }
 .container2 h1 {
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold;
     color: var(--sec-text-color);
     text-align: center;
@@ -343,7 +343,7 @@ footer {
     color: var(--sec-text-color);
     text-decoration: none;
     font-weight: 300;
-    display: block;
+    display: inline;
     transition: all .3s ease;
 }
 .foot-col ul li a:hover {
