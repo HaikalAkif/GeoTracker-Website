@@ -13,6 +13,9 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
+
         <title>GeoTracker</title>
     </head>
     <body>
@@ -22,7 +25,7 @@
             </div>
             <ul class="ul1">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="#">Community</a></li>
+                <li><a type="button" onclick="alert('This feature is not available yet')">Community</a></li>
                 <li><a href="help.html">Help</a></li>
                 <li><a href="abt.html">About Us</a></li>
             </ul>
@@ -38,6 +41,7 @@
                 <h1 class="search-title">How may we be of assistance?</h1>
                 <div class="search">
                     <input type="text" class="searchTerm" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
         </div>
@@ -133,5 +137,7 @@
                 </div>
             </div>
         </footer>
+
+        <script type="text/javascript" src="gsap.js"></script>
     </body>
 </html>
