@@ -13,6 +13,9 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
+
         <title>GeoTracker</title>
     </head>
     <body> 
@@ -22,7 +25,7 @@
             </div>
             <ul class="ul1">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="#">Community</a></li>
+                <li><a type="button" onclick="alert('This feature is not available yet')">Community</a></li>
                 <li><a href="help.html">Help</a></li>
                 <li><a href="abt.html">About Us</a></li>
             </ul>
@@ -103,11 +106,11 @@
                 <h1 class="cont3-title2">Explore with<br><span style="color: #2B8023;">confidence</span></h1>
                 <div class="feed">
                     <div class="feed-left">
-                        <!-- <img class="up-ico" alt="" src="public/a.svg" /> -->
+                        <i class="fa-regular fa-circle-up"></i>
                         <h2 class="opt1"><span style="color: #2B8023;">Search & explore</span></h2>
                         <h2 class="opt2">Navigate & track</h2>
                         <h2 class="opt3">Memorize & shine</h2>
-                        <!-- <img class="down-ico" alt="" src="public/a1.svg" /> -->
+                        <i class="fa-regular fa-circle-down"></i>
                       </div>
                       <!-- <img class="feed-mid" alt=""
                         src="assets/feed.avif"/> -->
@@ -163,75 +166,68 @@
                 </ul>
                 <hr>
             </div>
-            <div class="small-spots" style="display: grid; grid-template-columns: auto auto auto auto; margin-top: 20px; row-gap: 20px;">
-                <div class="place" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 20px;">
-                    <div class="photo" style="width: 80px; height: 80px; border-radius: 20px; background-color: #2B8023;"></div>
-                    <div class="more" style="display: block;">
-                        <h3 style="font-size: 18px; font-weight: bold;">Bukit Gasing</h3>
-                        <h6 style="font-size: 16px;">4.3 km | <span style="color: blue;">Intermediate</span></h6>
+            <div class="small-spots">
+                <div class="place">
+                    <div class="photo"></div>
+                    <div class="more">
+                        <h3>Bukit Gasing</h3>
+                        <h6>4.3 km | <span>Intermediate</span></h6>
                     </div>
                 </div>
-                <div class="place" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 20px;">
-                    <div class="photo" style="width: 80px; height: 80px; border-radius: 20px; background-color: #2B8023;"></div>
-                    <div class="more" style="display: block;">
-                        <h3 style="font-size: 18px; font-weight: bold;">Bukit Gasing</h3>
-                        <h6 style="font-size: 16px;">4.3 km | <span style="color: blue;">Intermediate</span></h6>
+                <div class="place">
+                    <div class="photo"></div>
+                    <div class="more">
+                        <h3>Bukit Sapu Tangan</h3>
+                        <h6>7.1 km | <span>Intermediate</span></h6>
                     </div>
                 </div>
-                <div class="place" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 20px;">
-                    <div class="photo" style="width: 80px; height: 80px; border-radius: 20px; background-color: #2B8023;"></div>
-                    <div class="more" style="display: block;">
-                        <h3 style="font-size: 18px; font-weight: bold;">Bukit Gasing</h3>
-                        <h6 style="font-size: 16px;">4.3 km | <span style="color: blue;">Intermediate</span></h6>
+                <div class="place">
+                    <div class="photo"></div>
+                    <div class="more">
+                        <h3>Abu Bakar Loop</h3>
+                        <h6>4.7 km | <span>Intermediate</span></h6>
                     </div>
                 </div>
-                <div class="place" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 20px;">
-                    <div class="photo" style="width: 80px; height: 80px; border-radius: 20px; background-color: #2B8023;"></div>
-                    <div class="more" style="display: block;">
-                        <h3 style="font-size: 18px; font-weight: bold;">Bukit Gasing</h3>
-                        <h6 style="font-size: 16px;">4.3 km | <span style="color: blue;">Intermediate</span></h6>
+                <div class="place">
+                    <div class="photo"></div>
+                    <div class="more">
+                        <h3>Bukit Setia Alam</h3>
+                        <h6>3.7 km | <span>Intermediate</span></h6>
                     </div>
                 </div>
-                <div class="place" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 20px;">
-                    <div class="photo" style="width: 80px; height: 80px; border-radius: 20px; background-color: #2B8023;"></div>
-                    <div class="more" style="display: block;">
-                        <h3 style="font-size: 18px; font-weight: bold;">Bukit Gasing</h3>
-                        <h6 style="font-size: 16px;">4.3 km | <span style="color: blue;">Intermediate</span></h6>
+                <div class="place">
+                    <div class="photo"></div>
+                    <div class="more">
+                        <h3>Bukit Cerakah</h3>
+                        <h6>4.7 km | <span>Intermediate</span></h6>
                     </div>
                 </div>
-                <div class="place" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 20px;">
-                    <div class="photo" style="width: 80px; height: 80px; border-radius: 20px; background-color: #2B8023;"></div>
-                    <div class="more" style="display: block;">
-                        <h3 style="font-size: 18px; font-weight: bold;">Bukit Gasing</h3>
-                        <h6 style="font-size: 16px;">4.3 km | <span style="color: blue;">Intermediate</span></h6>
+                <div class="place">
+                    <div class="photo"></div>
+                    <div class="more">
+                        <h3>Kiara Hill Peak</h3>
+                        <h6>5.8 km | <span>Intermediate</span></h6>
                     </div>
                 </div>
-                <div class="place" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 20px;">
-                    <div class="photo" style="width: 80px; height: 80px; border-radius: 20px; background-color: #2B8023;"></div>
-                    <div class="more" style="display: block;">
-                        <h3 style="font-size: 18px; font-weight: bold;">Bukit Gasing</h3>
-                        <h6 style="font-size: 16px;">4.3 km | <span style="color: blue;">Intermediate</span></h6>
+                <div class="place">
+                    <div class="photo"></div>
+                    <div class="more">
+                        <h3>Rawang Bypass</h3>
+                        <h6>3.9 km | <span>Intermediate</span></h6>
                     </div>
                 </div>
-                <div class="place" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 20px;">
-                    <div class="photo" style="width: 80px; height: 80px; border-radius: 20px; background-color: #2B8023;"></div>
-                    <div class="more" style="display: block;">
-                        <h3 style="font-size: 18px; font-weight: bold;">Bukit Gasing</h3>
-                        <h6 style="font-size: 16px;">4.3 km | <span style="color: blue;">Intermediate</span></h6>
+                <div class="place">
+                    <div class="photo"></div>
+                    <div class="more">
+                        <h3>BMC Blue Lake Loop</h3>
+                        <h6>2.7 km | <span style="color: #3E8112;">Easy</span></h6>
                     </div>
                 </div>
-                <div class="place" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 20px;">
-                    <div class="photo" style="width: 80px; height: 80px; border-radius: 20px; background-color: #2B8023;"></div>
-                    <div class="more" style="display: block;">
-                        <h3 style="font-size: 18px; font-weight: bold;">Bukit Gasing</h3>
-                        <h6 style="font-size: 16px;">4.3 km | <span style="color: blue;">Intermediate</span></h6>
-                    </div>
-                </div>
-                <div class="place" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 20px;">
-                    <div class="photo" style="width: 80px; height: 80px; border-radius: 20px; background-color: #2B8023;"></div>
-                    <div class="more" style="display: block;">
-                        <h3 style="font-size: 18px; font-weight: bold;">Bukit Gasing</h3>
-                        <h6 style="font-size: 16px;">4.3 km | <span style="color: blue;">Intermediate</span></h6>
+                <div class="place">
+                    <div class="photo"></div>
+                    <div class="more">
+                        <h3>Bukit Kutu</h3>
+                        <h6>9.9 km | <span style="color: #D81F1F;">Extreme</span></h6>
                     </div>
                 </div>
             </div>
@@ -331,5 +327,7 @@
                 </div>
             </div>
         </footer>
+
+        <script type="text/javascript" src="gsap.js"></script>
     </body>
 </html>
