@@ -1,11 +1,12 @@
 // Home Page Gsap
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".search-title", {
     scrollTrigger: ".search-title",
     y: 100,
     duration: 1.2,
     opacity: 0,
-    scrub: 1
+    scrub: 1,
 });
 
 gsap.from(".search", {
