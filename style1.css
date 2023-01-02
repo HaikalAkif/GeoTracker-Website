@@ -8,7 +8,7 @@
     display: none;
 }
 *::selection {
-    background: orangered;
+    background: lime;
     color: var(--sec-text-color);
 }
 :root{
@@ -18,7 +18,9 @@
     --sec-text-color: #efefef;
     --extra-color: #29C31B;
     --extra2-color: #dedede;
-    --extra3-color: #1693DA;
+    --extra3-color: #232323;
+    --extra4-color: #1693DA;
+    --extra5-color: #ababab;
 }
 
 /* Header Design */
@@ -122,7 +124,7 @@ header .ul2 li a {
 }
 .search i {
     font-size: 24px;
-    color: var(--extra2-color);
+    color: var(--extra5-color);
 }
 .searchTerm {
     width: 100%;
@@ -245,10 +247,14 @@ header .ul2 li a {
     height: 160px;
     margin: 5px;
     background-color: var(--extra-color);
-    
     transition: .3s;
     overflow: hidden;
     cursor: pointer;
+}
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
 }
 .container3 .part1 .right {
     display: flex;
@@ -510,7 +516,7 @@ header .ul2 li a {
     font-size: 16px;
 }
 .more h6 span {
-    color: var(--extra3-color);
+    color: var(--extra4-color);
 }
 
 

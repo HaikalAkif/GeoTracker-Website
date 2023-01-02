@@ -17,7 +17,10 @@
     --main-text-color: #121212;
     --sec-text-color: #efefef;
     --extra-color: #29C31B;
-    --extra2-color: #cdcdcd;
+    --extra2-color: #dedede;
+    --extra3-color: #232323;
+    --extra4-color: #1693DA;
+    --extra5-color: #ababab;
 }
 
 /* Header Design */
@@ -122,7 +125,7 @@ header .ul2 li a {
 }
 .search i {
     font-size: 24px;
-    color: var(--extra2-color);
+    color: var(--extra5-color);
 }
 .searchTerm {
     width: 100%;

@@ -8,7 +8,7 @@
     display: none;
 }
 *::selection {
-    background: orangered;
+    background: lime;
     color: var(--sec-text-color);
 }
 :root{
@@ -17,8 +17,10 @@
     --main-text-color: #121212;
     --sec-text-color: #efefef;
     --extra-color: #29C31B;
-    --extra2-color: #cdcdcd;
+    --extra2-color: #dedede;
     --extra3-color: #232323;
+    --extra4-color: #1693DA;
+    --extra5-color: #ababab;
 }
 
 /* Header Design */
