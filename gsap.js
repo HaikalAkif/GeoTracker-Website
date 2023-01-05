@@ -25,6 +25,14 @@ gsap.from(".cont2-title", {
     scrub: 1
 });
 
+gsap.from(".pic", {
+    scrollTrigger: ".left",
+    x: -100,
+    duration: 1.5,
+    opacity: 0,
+    scrub: 1
+});
+
 gsap.from(".cont3-title", {
     scrollTrigger: ".cont3-title",
     x: 100,
@@ -121,6 +129,14 @@ gsap.from(".head-title", {
     scrollTrigger: ".title",
     y: 200,
     duration: 1.5,
+    opacity: 0,
+    scrub: 1
+});
+
+gsap.from(".staff", {
+    scrollTrigger: ".staff",
+    y: 200,
+    duration: 1.2,
     opacity: 0,
     scrub: 1
 });
