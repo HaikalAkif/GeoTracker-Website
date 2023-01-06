@@ -73,9 +73,25 @@ gsap.from(".feed-right", {
     scrub: 1
 });
 
+gsap.from(".btn2", {
+    scrollTrigger: ".btn2",
+    x: 100,
+    duration: 1,
+    opacity: 0,
+    scrub: 1
+});
+
 gsap.from(".info", {
     scrollTrigger: ".cont4-top",
     y: 100,
+    duration: 1.5,
+    opacity: 0,
+    scrub: 1
+});
+
+gsap.from(".cont4-desc", {
+    scrollTrigger: ".cont4-desc",
+    x: -100,
     duration: 1.5,
     opacity: 0,
     scrub: 1
@@ -113,6 +129,14 @@ gsap.from(".promote", {
     scrub: 1
 });
 
+gsap.from(".btn5", {
+    scrollTrigger: ".btn5",
+    y: 150,
+    duration: 1.2,
+    opacity: 0,
+    scrub: 1
+});
+
 // Help Page Gsap
 
 gsap.from(".choice", {
@@ -121,6 +145,14 @@ gsap.from(".choice", {
     duration: 2,
     opacity: 0,
     scrub: 2
+});
+
+gsap.from(".btnD", {
+    scrollTrigger: ".btn",
+    y: 150,
+    duration: 1,
+    opacity: 0,
+    scrub: 1
 });
 
 // About Page Gsap
@@ -136,7 +168,7 @@ gsap.from(".head-title", {
 gsap.from(".staff", {
     scrollTrigger: ".staff",
     y: 200,
-    duration: 1.2,
+    duration: 0.8,
     opacity: 0,
     scrub: 1
 });
