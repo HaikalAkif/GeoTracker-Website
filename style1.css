@@ -32,7 +32,7 @@ header {
     padding: 10px;
     background-color: var(--sec-color);
     position: fixed;
-    z-index: 10;
+    z-index: 30;
 }
 header .ul1 {
     display: flex;
@@ -57,6 +57,9 @@ header .ul1 li a {
 header .ul1 li a:hover {
     color: var(--main-text-color);
 }
+header .ul1 li a.active {
+    color: var(--main-text-color);
+}
 header .logo img {
     width: 60px;
 }
@@ -67,28 +70,29 @@ header .ul2 {
     width: 40%;
     list-style-type: none;
 }
-header .ul2 li a {
+header .ul2 li button {
+    border: none;
     font-size: 18px;
     padding: 8px 20px;
     margin: 0 6px;
     color: var(--sec-text-color);
     text-decoration: none;
 }
-.ul2 .signup {
+.signup {
     background-color: var(--extra-color);
     border-radius: 50px;
     transition: ease-in .3s;
 }
-.ul2 .signup:hover {
+.signup:hover {
     background-color: var(--extra2-color);
     color: var(--main-text-color);
 }
-.ul2 .login {
+.login {
     background-color: var(--extra-color);
     border-radius: 50px;
     transition: ease-in .3s;
 }
-.ul2 .login:hover {
+.login:hover {
     background-color: var(--extra2-color);
     color: var(--main-text-color);
 }
@@ -199,6 +203,8 @@ header .ul2 li a {
     color: var(--main-color);
     background: transparent;
     border: 2px solid #efefef;
+    border-radius: 2px;
+    transition: ease-in-out .3s;
 }
 .visit:hover {
     color: var(--main-text-color);
@@ -229,18 +235,18 @@ header .ul2 li a {
     padding: 60px 10%;
     background-color: var(--main-color);
 }
-.container3 .part1 {
+.part1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
-.container3 .part1 .left {
+.part1 .left {
     display: grid;
     grid-template-columns: auto auto auto;
     margin-right: 200px;
 }
-.container3 .part1 .left .pic {
+.part1 .left .pic {
     position: relative;
     border-radius: 20px;
     width: 200px;
@@ -256,17 +262,17 @@ header .ul2 li a {
     height: 100%;
     object-position: center;
 }
-.container3 .part1 .right {
+.part1 .right {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
-.container3 .part1 .right .cont3-title {
+.part1 .right .cont3-title {
     color: var(--main-text-color);
     font-size: 50px;
 }
-.container3 .part1 .right .cont3-st {
+.part1 .right .cont3-st {
     color: var(--main-text-color);
     font-size: 20px;
     margin: 20px 0;
@@ -284,14 +290,14 @@ header .ul2 li a {
     background-color: var(--sec-color);
     color: var(--sec-text-color);
 }
-.container3 .part2 {
+.part2 {
     margin-top: 50px;
 }
-.container3 .part2 .cont3-title2 {
+.part2 .cont3-title2 {
     color: var(--main-text-color);
     font-size: 85px;
 }
-.container3 .part2 .feed {
+.part2 .feed {
     background: var(--extra2-color);
     position: relative;
     border-radius: 35px;
@@ -504,6 +510,14 @@ header .ul2 li a {
     height: 80px;
     border-radius: 20px;
     background-color: var(--extra-color);
+    overflow: hidden;
+    object-fit: fill;
+    object-position: center;
+}
+.photo img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
 }
 .more {
     display: block;

@@ -32,7 +32,7 @@ header {
     padding: 10px;
     background-color: var(--sec-color);
     position: fixed;
-    z-index: 10;
+    z-index: 30;
 }
 header .ul1 {
     display: flex;
@@ -57,6 +57,9 @@ header .ul1 li a {
 header .ul1 li a:hover {
     color: var(--main-text-color);
 }
+header .ul1 li a.active {
+    color: var(--main-text-color);
+}
 header .logo img {
     width: 60px;
 }
@@ -67,7 +70,8 @@ header .ul2 {
     width: 40%;
     list-style-type: none;
 }
-header .ul2 li a {
+header .ul2 li button {
+    border: none;
     font-size: 18px;
     padding: 8px 20px;
     margin: 0 6px;
@@ -143,6 +147,10 @@ header .ul2 li a {
 }
 
 .container2 {
+    padding: 30px 10%;
+    background-color: var(--main-color);
+}
+.cont2 {
     padding: 50px 10%;
     background-color: var(--main-color);
     display: grid;
@@ -153,6 +161,7 @@ header .ul2 li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     border-radius: 15px;
     border: 2px solid #2B8023;
     background: transparent;
@@ -163,10 +172,36 @@ header .ul2 li a {
     color: var(--sec-color);
     font-size: 16px;
     background: transparent;
-    padding: 10px 20px;
+    padding: 5px 10px;
+    text-align: center;
+}
+.choice p {
+    text-align: center;
 }
 .choice:hover {
     background: var(--extra2-color);
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.btnD {
+    padding: 8px 12px;
+    margin-top: 20px;
+    width: 30%;
+    border: none;
+    border-radius: 3px;
+    background: var(--extra-color);
+    color: var(--sec-text-color);
+    transition: all .5s;
+}
+.btnD:hover {
+    border-radius: 3px;
+    background: var(--sec-color);
+    color: var(--sec-text-color);
 }
 
 /* Footer Design */
