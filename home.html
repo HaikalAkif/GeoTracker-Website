@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="popup.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
@@ -20,21 +21,43 @@
         <link rel="icon" type="image/x-icon" href="assets/GeoLogo.ico">
     </head>
     <body> 
+        <!-- Header with navigation -->
         <header>
             <div class="logo">
                 <img src="assets/GeoLogo.png" alt="GTL"/>
             </div>
             <ul class="ul1">
-                <li><a href="home.html">Home</a></li>
+                <li><a href="home.html" class="active">Home</a></li>
                 <li><a type="button" onclick="alert('This feature is not available yet')">Community</a></li>
                 <li><a href="help.html">Help</a></li>
                 <li><a href="abt.html">About Us</a></li>
             </ul>
-            <ul class="ul2">
-                <li><a class="signup" href="#">Sign Up</a></li>
-                <li><a class="login" href="#">Log In</a></li>
+            <!-- Sign Up and Log In Page -->
+            <ul class="ul2"> 
+                <li><button class="signup" onclick="openPopupS()">Sign Up</button></li>
+                <li><button class="login" onclick="openPopupL()">Log In</button></li>
             </ul>
         </header>
+
+        <!-- Sign Up & Log In Popup  -->
+        <div class="popupS" id="popupS">
+            <h2>Register Your Account</h2>
+            <label>Email </label> <br>
+                <input type="email" style="border-radius: 6px;"><br><br>
+            <label>Password </label> <br>
+                <input type="password" style="border-radius: 6px;"><br><br>
+            <button class="proceed" onclick="closePopupS()">Sign Up</button>
+        </div>
+        <div class="popupL" id="popupL">
+            <h2>Log In to Existing Account</h2>
+            <label>Email </label> <br>
+                <input type="email" style="border-radius: 6px;"><br><br>
+            <label>Password </label> <br>
+                <input type="password" style="border-radius: 6px;"><br><br>
+            <button class="proceed" onclick="closePopupL()">Log In</button>
+        </div>
+
+        <!-- Container 1 provide Hiking Spots Search bar -->
         <div style="top: 10vh;"></div>
         <div class="container1">
             <img class="img1" src="https://imgs.search.brave.com/FTmS-3c2LOLR4ioi-ABwULipXeEpGuJzUBhuZtUldH0/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9pbWFn/ZXMud2FsbHBhcGVy/c2NyYWZ0LmNvbS9p/bWFnZS9zaW5nbGUv/bWFuX2ZvcmVzdF9z/bG9wZV8xNDcyODdf/Mzg0MHgyMTYwLmpw/Zw" alt="Hike">
@@ -46,6 +69,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Container 2 provide nearby Hiking & Picnic Spots -->
         <div class="container2">
             <h2 class="cont2-title">Favorites spots near Gombak</h2>
             <div class="spots">
@@ -87,6 +112,8 @@
                 </div>
             </div>    
         </div>
+
+        <!-- Container 3 Part 1 provide what category of hiking style we promoted -->
         <div class="container3">
             <div class="part1">
                 <div class="left">
@@ -103,6 +130,7 @@
                     <button class="btn2">Sign Up</button>
                 </div>
             </div>
+            <!-- Container 3 Part 2 shown the feedbacks of our mobile app -->
             <div class="part2">
                 <h1 class="cont3-title2">Explore with<br><span style="color: #2B8023;">confidence</span></h1>
                 <div class="feed">
@@ -122,6 +150,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Container 4 top part shown the data and statistics of how wide our app been used -->
         <div class="container4">
             <div class="cont4-top">
                 <div class="info">
@@ -140,6 +170,7 @@
                     <h5>Navigates your way and keep<br>a record of all your travels.</h5>
                 </div>
             </div>
+            <!-- Container 4 bottom part serve the ads and link to download our mobile application -->
             <div class="cont4-bot">
                 <img src="assets/download.png" alt=""/>
                 <div class="ads">
@@ -155,11 +186,13 @@
                 </div>
             </div>
         </div>
+
+        <!-- Container 5 shown more trails that available in your current state -->
         <div class="container5">
             <div class="heading">
                 <h2>Adventure anywhere</h2>
                 <ul class="ul3">
-                    <li><a href="#" style="text-decoration: solid;">Trending trails</a></li>
+                    <li><a href="#" style="background: #ccc; border-radius: 8px;">Trending trails</a></li>
                     <li><a href="#">Parks worth a look</a></li>
                     <li><a href="#">Cities to explore</a></li>
                     <li><a href="#">Countries to consider</a></li>
@@ -168,63 +201,63 @@
             </div>
             <div class="small-spots">
                 <div class="place">
-                    <div class="photo"><img src="" alt=""/></div>
+                    <div class="photo"><img src="https://imgs.search.brave.com/aOFt7VQSrCeScNgZw8W80P9Ugsm0MsmsutQFLnL9TdQ/rs:fit:338:450:1/g:ce/aHR0cHM6Ly9tZWRp/YS1jZG4udHJpcGFk/dmlzb3IuY29tL21l/ZGlhL3Bob3RvLXMv/MTQvZWEvNmIvZGEv/YnVraXQtZ2FzaW5n/LWZvcmVzdC10cmFp/bC5qcGc" alt=""/></div>
                     <div class="more">
                         <h3>Bukit Gasing</h3>
                         <h6>4.3 km | <span>Intermediate</span></h6>
                     </div>
                 </div>
                 <div class="place">
-                    <div class="photo"><img src="" alt=""/></div>
+                    <div class="photo"><img src="https://imgs.search.brave.com/Rq7rv9Q599MCdeGUzW40i1lvo-dniWsEUUyJa9CGVcs/rs:fit:495:660:1/g:ce/aHR0cHM6Ly9reWVu/c2lvbi5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMTcvMDMv/SU1HXzIwMTYxMjMx/XzEwMDgzMy00OTV4/NjYwLmpwZw" alt=""/></div>
                     <div class="more">
                         <h3>Bukit Sapu Tangan</h3>
                         <h6>7.1 km | <span>Intermediate</span></h6>
                     </div>
                 </div>
                 <div class="place">
-                    <div class="photo"><img src="" alt=""/></div>
+                    <div class="photo"><img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNDU1NTIyOTAvODMwYzgwYjgwYjQ1MzhmMjA1YmViM2ZjN2JhN2I2OTMuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==" alt=""/></div>
                     <div class="more">
                         <h3>Abu Bakar Loop</h3>
                         <h6>4.7 km | <span>Intermediate</span></h6>
                     </div>
                 </div>
                 <div class="place">
-                    <div class="photo"><img src="" alt=""/></div>
+                    <div class="photo"><img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQ3NjI4NTMvZTNhZDg3NTQzODNmYTczOTU2Y2ZlOTVmMjU3ZjRiNTMuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==" alt=""/></div>
                     <div class="more">
                         <h3>Bukit Setia Alam</h3>
                         <h6>3.7 km | <span>Intermediate</span></h6>
                     </div>
                 </div>
                 <div class="place">
-                    <div class="photo"><img src="" alt=""/></div>
+                    <div class="photo"><img src="https://imgs.search.brave.com/YROPt53wVYcIpzIJ60DsEBH9lD-EMBl77HyMjdomReo/rs:fit:1024:768:1/g:ce/aHR0cHM6Ly9wYnMu/dHdpbWcuY29tL21l/ZGlhL0NLbTdrR0lW/QUFBTmRrSS5qcGc" alt=""/></div>
                     <div class="more">
                         <h3>Bukit Cerakah</h3>
                         <h6>4.7 km | <span>Intermediate</span></h6>
                     </div>
                 </div>
                 <div class="place">
-                    <div class="photo"><img src="" alt=""/></div>
+                    <div class="photo"><img src="https://imgs.search.brave.com/qyk_p-7HCz0wXnqqHxw6Txh5f3lzhDESg2qlYP3kBh4/rs:fit:360:480:1/g:ce/aHR0cHM6Ly9saDMu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tL2V6/SnN5UWRwSDBYN0NF/OFJGeUxEMWR6WExL/dWx1eEF1QnlsSG9a/czEzSmRTeVEwUFVm/MnE1dmNTOEZOQnNw/RzRZOXRxOGp4dmJq/RVljZ2lmTi0tOU9E/NXM1STlkTXlZNElm/bzdJbDZnTEhlZ2RP/MjMwOUtyeUEtM1E3/emh0X3pWMDdjanZv/ZGhrdz1oNDgw" alt=""/></div>
                     <div class="more">
                         <h3>Kiara Hill Peak</h3>
                         <h6>5.8 km | <span>Intermediate</span></h6>
                     </div>
                 </div>
                 <div class="place">
-                    <div class="photo"><img src="" alt=""/></div>
+                    <div class="photo"><img src="https://imgs.search.brave.com/JTmV1q5r6rZqNqJqsIBypc-2VrJx5BFzW3pnNx1G6wk/rs:fit:1200:900:1/g:ce/aHR0cHM6Ly9yaWRl/cmNocmlzLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMS8w/NS9yYXdhbmctYnlw/YXNzLWhpa2luZzE3/LmpwZw" alt=""/></div>
                     <div class="more">
                         <h3>Rawang Bypass</h3>
                         <h6>3.9 km | <span>Intermediate</span></h6>
                     </div>
                 </div>
                 <div class="place">
-                    <div class="photo"><img src="" alt=""/></div>
+                    <div class="photo"><img src="https://imgs.search.brave.com/Z3z4r2ba3vio-YAIcjynu8DhycxtzUHifykqcufhpiw/rs:fit:1200:720:1/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9D/dVFjXzN5R2lPMC9t/YXhyZXNkZWZhdWx0/LmpwZw" alt=""/></div>
                     <div class="more">
                         <h3>BMC Blue Lake Loop</h3>
                         <h6>2.7 km | <span style="color: #3E8112;">Easy</span></h6>
                     </div>
                 </div>
                 <div class="place">
-                    <div class="photo"><img src="" alt=""/></div>
+                    <div class="photo"><img src="https://imgs.search.brave.com/2fMcdXpw_ROYO54E2TK7AKVwJGKueoDBJGeVQiJpN_I/rs:fit:640:480:1/g:ce/aHR0cHM6Ly9saDMu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tLy1T/dlhmMXVfeGU0Yy9W/WURiM2RPWXFoSS9B/QUFBQUFBQUExZy9R/OEZ3c1FhZFdYRS9z/NjQwL0cwMzQwNzM5/LkpQRw" alt=""/></div>
                     <div class="more">
                         <h3>Bukit Kutu</h3>
                         <h6>9.9 km | <span style="color: #D81F1F;">Extreme</span></h6>
@@ -233,6 +266,8 @@
             </div>
             
         </div>
+
+        <!-- Container 6 provide our main banner and a small ads about donation to the nature -->
         <div class="container6">
             <div class="cont6">
                 <div class="cont6-left">
@@ -245,6 +280,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Container 7 share some reasons of why the user may donate to us -->
         <div class="container7">
             <div class="cont7-top">
                 <div class="promote">
@@ -267,6 +304,7 @@
                 <button class="btn5">Sign Up To Donate</button>
             </div>
         </div>
+        <!-- Our footer link the user to more network, features and about our website -->
         <footer>
             <div class="foot">
                 <h1>GeoTracker</h1>
@@ -331,6 +369,8 @@
             </div>
         </footer>
 
+        <!-- Using a few JavaScript to decorate the animation of our website -->
         <script type="text/javascript" src="gsap.js"></script>
+        <script type="text/javascript" src="popup.js"></script>
     </body>
 </html>
