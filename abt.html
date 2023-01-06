@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style3.css">
+        <link rel="stylesheet" href="popup.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
@@ -20,6 +21,7 @@
         <link rel="icon" type="image/x-icon" href="assets/GeoLogo.ico">
     </head>
     <body>
+        <!-- Header with navigation -->
         <header>
             <div class="logo">
                 <img src="assets/GeoLogo.png" alt="GTL"/>
@@ -28,13 +30,34 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a type="button" onclick="alert('This feature is not available yet')">Community</a></li>
                 <li><a href="help.html">Help</a></li>
-                <li><a href="abt.html">About Us</a></li>
+                <li><a href="abt.html" class="active">About Us</a></li>
             </ul>
+            <!-- Sign Up and Log In Page -->
             <ul class="ul2">
-                <li><a class="signup" href="#">Sign Up</a></li>
-                <li><a class="login" href="#">Log In</a></li>
+                <li><button class="signup" onclick="openPopupS()">Sign Up</button></li>
+                <li><button class="login" onclick="openPopupL()">Log In</button></li>
             </ul>
         </header>
+
+        <!-- Sign Up & Log In Popup  -->
+        <div class="popupS" id="popupS">
+            <h2>Register Your Account</h2>
+            <label>Email </label> <br>
+                <input type="email" style="border-radius: 6px;"><br><br>
+            <label>Password </label> <br>
+                <input type="password" style="border-radius: 6px;"><br><br>
+            <button class="proceed" onclick="closePopupS()">Sign Up</button>
+        </div>
+        <div class="popupL" id="popupL">
+            <h2>Log In to Existing Account</h2>
+            <label>Email </label> <br>
+                <input type="email" style="border-radius: 6px;"><br><br>
+            <label>Password </label> <br>
+                <input type="password" style="border-radius: 6px;"><br><br>
+            <button class="proceed" onclick="closePopupL()">Log In</button>
+        </div>
+
+        <!-- Container 1 shown our website poster and title -->
         <div class="container1">
             <img class="img1" src="https://imgs.search.brave.com/nM_2ZSpDtCgsnGxC8OoxZQRZFFrlxtAwVS3lCNj4BlU/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzbXVnLmNv/bS9kb3dubG9hZC8z/ODQweDIxNjAvZjdm/YmUyL2RpcnQtcm9h/ZC10cmVlLWZvcnN0/LWdyZWVucnkuanBn" alt="">
             <div class="title">
@@ -42,6 +65,8 @@
                 <h4 class="sub-title">We connect people<br>with the nature</h4>
             </div>
         </div>
+
+        <!-- Container 2 shown our company team in completing this project -->
         <div class="container2">
             <h1>OUR TEAM</h1>
             <div class="profile">
@@ -80,6 +105,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Container 3 shown our mobile app teaser and our company background -->
         <div class="container3">
             <div class="cont3-left">
                 <iframe width="720" height="360" src="https://www.youtube.com/embed/usS9Xz8Sq6U" title="GeoTracker Tourism | IIUM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -89,6 +116,8 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
         </div>
+
+        <!-- Container 4 provided the chance for the user to create a network and work with our company -->
         <div class="container4">
             <img class="img2" src="https://imgs.search.brave.com/cU19KAqi0LP9sOJjoJdaKMdqJRulUeqsxMf0hZGJ_Fk/rs:fit:1200:1080:1/g:ce/aHR0cHM6Ly9iYWNr/aWVlLmNvbS9zdGF0/aWMvd3BkYi93YWxs/cGFwZXJzLzE5MjB4/MTA4MC8yMjQyMjUu/anBn" alt=""/>
             <div class="desc">
@@ -100,6 +129,7 @@
                 </div>
             </div>
         </div>
+        <!-- Our footer link the user to more network, features and about our website -->
         <footer>
             <div class="foot">
                 <h1>GeoTracker</h1>
@@ -164,6 +194,8 @@
             </div>
         </footer>
 
+        <!-- Using a few JavaScript to decorate the animation of our website -->
         <script type="text/javascript" src="gsap.js"></script>
+        <script type="text/javascript" src="popup.js"></script>
     </body>
 </html>
