@@ -1,0 +1,87 @@
+/* Sign Up Popup */
+.popupS {
+    width: 450px;
+    height: 260px;
+    background: var(--main-color);
+    border-radius: 6px;
+    position: absolute;
+    padding: 20px 40px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    color: var(--main-text-color);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 20;
+}
+.open-popupS {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popupS input {
+    padding: 5px 0 5px 3px;
+    width: 260px;
+}
+.popupS button {
+    padding: 8px 20px;
+    background: var(--sec-color);
+    color: var(--sec-text-color);
+    border: none;
+    border-radius: 4px;
+    transition: ease .4s;
+}
+.popupS button:hover {
+    padding: 8px 20px;
+    background: var(--extra-color);
+    color: var(--sec-text-color);
+    border: none;
+    border-radius: 4px;
+}
+
+/* Log In Popup */
+.popupL {
+    width: 450px;
+    height: 260px;
+    background: var(--main-color);
+    border-radius: 6px;
+    position: absolute;
+    padding: 20px 40px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    color: var(--main-text-color);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 20;
+}
+.open-popupL {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popupL input {
+    padding: 5px 0 5px 3px;
+    width: 300px;
+}
+.popupL button {
+    padding: 8px 20px;
+    background: var(--sec-color);
+    color: var(--sec-text-color);
+    border: none;
+    border-radius: 4px;
+    transition: ease .4s;
+}
+.popupL button:hover {
+    padding: 8px 20px;
+    background: var(--extra-color);
+    color: var(--sec-text-color);
+    border: none;
+    border-radius: 4px;
+}
