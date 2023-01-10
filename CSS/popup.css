@@ -40,6 +40,7 @@
     color: var(--sec-text-color);
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 /* Log In Popup */
@@ -84,6 +85,7 @@
     color: var(--sec-text-color);
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .close {
@@ -93,4 +95,8 @@
     height : 30px;
     width: 30px;
 
+}
+
+.close:hover {
+    cursor: pointer;
 }
