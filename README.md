@@ -12,7 +12,6 @@
 ## Introduction
 
 Group Cynics
-'GeoTracker'
 'GeoTracker' is a website that provide an underrated hiking trails and picnic spots in Malaysia.
 Prepared By:
 
